@@ -5,7 +5,7 @@ export default function About() {
     <React.Fragment>
       <h1 style={{ textAlign: "center" }}>About Page</h1>
       <br />
-      <p style={{ textAlign: "center" }}>I'm so in love hi megan ;)</p>
+      <p style={{ textAlign: "center" }}>Made by Dylan Baker :)</p>
     </React.Fragment>
   );
 }

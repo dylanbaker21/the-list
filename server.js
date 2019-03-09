@@ -9,17 +9,17 @@ app.use(bodyParser.json());
 var todos = [
   {
     id: "1",
-    title: "Hello",
+    title: "Item 1",
     completed: false
   },
   {
     id: "2",
-    title: "There",
+    title: "Item 2",
     completed: false
   },
   {
     id: "3",
-    title: "Person",
+    title: "You guessed it, item 3 :)",
     completed: false
   }
 ];

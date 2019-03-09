@@ -19,8 +19,9 @@ export class TodoItem extends Component {
             checked={this.props.todo.completed}
             type="checkbox"
             onChange={this.props.markComplete.bind(this, this.props.todo.id)}
+            style={{ padding: "55px" }}
           />
-          {"   "}
+          {"              "}
           {this.props.todo.title}
           <button
             style={btnStyle}
@@ -46,9 +47,10 @@ const btnStyle = {
   color: "#fff",
   border: "none",
   padding: "5px 10px",
+  margin: "0px 0px 0px 20px",
   borderRadius: "10%",
   cursor: "pointer",
-  float: "right"
+  float: "middle"
 };
 
 export default TodoItem;
