@@ -15,19 +15,21 @@ class App extends Component {
   };
 
   componentDidMount() {
-    axios.get("/api/todos").then(res => this.setState({ todos: res.data }));
+    axios
+      .get("localhost:5000/api/todos")
+      .then(res => this.setState({ todos: res.data }));
   }
 
   // Toggle Complete
   markComplete = id => {
     axios
-      .post(`/api/todos${id}`, { id })
+      .post(`localhost:5000/api/todos${id}`, { id })
       .then(res => this.setState({ todos: res.data }));
   };
 
   // Delete Todo
   delTodo = id => {
-    axios.delete(`/api/todos${id}`).then(res =>
+    axios.delete(`localhost:5000/api/todos${id}`).then(res =>
       this.setState({
         todos: res.data
       })
@@ -42,7 +44,7 @@ class App extends Component {
       completed: false
     };
     axios
-      .post("/api/todos", { newTodo })
+      .post("localhost:5000/api/todos", { newTodo })
       .then(res => this.setState({ todos: res.data }));
   };
 
